@@ -3,45 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lecture-01 - PHP Introduction</title>
 </head>
 <body>
     
     <?php
-    // Print Statement
+    // Printing a simple message
     echo "Hello World!";
 
-    // Creating Variables with assigning Values for each variable
-    $First=10;
-    $Second=20;
+    // Creating two variables and assigning values to them
+    $First = 10;
+    $Second = 20;
 
-    // Printing Variables ( Values )
+    // Printing the values of the variables
     echo "<h1>My Values</h1>";
     echo $First . "<br>" . $Second;
 
-
-
-    // Performing Addition on Variables
-    $add=$First+$Second;
+    // Performing addition on variables
+    $add = $First + $Second;
     echo "<h3>Addition:</h3>" . $add;
 
-    // Performing Subtraction on Variables
-    $sub=$First-$Second;
+    // Performing subtraction on variables
+    $sub = $First - $Second;
     echo "<h3>Subtraction:</h3>" . $sub;
 
-    // Performing Multipication on Variables
-    $multiply=$First*$Second;
+    // Performing multiplication on variables
+    $multiply = $First * $Second;
     echo "<h3>Multiplication:</h3>" . $multiply;
 
-    // Performing Division on Variables
-    $division=$First/$Second;
+    // Performing division on variables
+    $division = $First / $Second;
     echo "<h3>Division:</h3>" . $division;
 
-    // Assignments Operators in PHP: (1) += (2) -= (3) /= (4) *=
+    // Assignment Operators in PHP: (1) += (2) -= (3) /= (4) *=
     $Num = 100;
     $Value = $Num;
 
-    // Printing Default Value
+    // Printing the default value
     echo "<h1>Default Value</h1>" . $Value . "<br>";
 
     // Performing addition using assignment operators
@@ -62,25 +60,22 @@
 
     // Comparison Operators: (1) == (2) != (3) > (4) < (5) >= (6) <= ...
 
-    // Using var_dump function
-    echo "<h1>Comparsion Operators</h1>";
-    echo "1==7" . var_dump(1==7) . "<br>";
-    echo "1!=7" . var_dump(1!=7) . "<br>";
-    echo "1>=7" . var_dump(1>=7) . "<br>";
-    echo "1<=7" . var_dump(1<=7) . "<br>";
+    // Using var_dump function to compare values
+    echo "<h1>Comparison Operators</h1>";
+    echo "1 == 7: " . var_dump(1 == 7) . "<br>";
+    echo "1 != 7: " . var_dump(1 != 7) . "<br>";
+    echo "1 >= 7: " . var_dump(1 >= 7) . "<br>";
+    echo "1 <= 7: " . var_dump(1 <= 7) . "<br>";
 
-
-    // Performing Conditional Statement
+    // Performing a conditional statement
     echo "<h1>Conditional Statement</h1>";
     if ($Value > 1) {
-        echo $Value . "&nbsp is Positive Number";
-    }else if ($Value < 1) {
-        echo $Value . "&nbsp is Negative Number";
-    }else {
-        echo $Value . "&nbsp is not a number!";
+        echo $Value . "&nbsp; is a Positive Number";
+    } else if ($Value < 1) {
+        echo $Value . "&nbsp; is a Negative Number";
+    } else {
+        echo $Value . "&nbsp; is not a number!";
     }
-
-
     ?>
 </body>
 </html>
